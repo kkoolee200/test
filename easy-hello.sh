@@ -20,7 +20,7 @@ docker build -t $IMAGE_NAME -f Dockerfile .
 
 # 4. 컨테이너 실행
 echo -e "\n===== 5. Restart Container ====="
-docker run -d --name $CONTAINER_NAME -p 8000:8080 $IMAGE_NAME
+docker run -d --name $CONTAINER_NAME -p 8000:8000 $IMAGE_NAME
 
 # 5. 컨테이너 확인
 echo -e "\n===== 6. Check Container State ====="
